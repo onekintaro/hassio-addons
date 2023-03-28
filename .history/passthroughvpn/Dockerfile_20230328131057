@@ -1,10 +1,5 @@
 FROM debian:bullseye-slim
 
-LABEL \
-  io.hass.version="VERSION" \
-  io.hass.type="addon" \
-  io.hass.arch="armhf|aarch64|i386|amd64"
-
 RUN usermod -u 99 nobody
 
 # Install WireGuard, OpenVPN and other dependencies for running qbittorrent-nox and the container scripts
