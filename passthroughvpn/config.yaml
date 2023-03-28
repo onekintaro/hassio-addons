@@ -1,0 +1,20 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: Passtrough VPN Addon
+version: "1.2.0"
+slug: example
+description: Passtrough VPN Addon
+url: "https://github.com/onekintaro/hassio-addons/tree/main/passthroughvpn"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options:
+  message: "Hello world..."
+schema:
+  message: "str?"
+image: "ghcr.io/home-assistant/{arch}-addon-example"

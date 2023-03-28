@@ -1,0 +1,14 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-dockerfile
+build_from:
+  aarch64: "debian:bullseye-slim"
+  amd64: "debian:bullseye-slim"
+  armhf: "debian:bullseye-slim"
+  armv7: "debian:bullseye-slim"
+  i386: "debian:bullseye-slim"
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: passtroughvpn"
+  org.opencontainers.image.description: "Passtrough VPN Addon for Home Assistant"
+  org.opencontainers.image.source: "https://github.com/onekintaro/hassio-addons/"
+  org.opencontainers.image.licenses: "GNU General Public License v3.0"
+args:
+  TEMPIO_VERSION: "2023.03.0"
