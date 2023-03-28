@@ -1,0 +1,31 @@
+{
+    "name": "Passthrough VPN Addon",
+    "version": "0.1.0",
+    "slug": "passthroughvpn",
+    "description": "Passtrough VPN Addon",
+    "arch": [
+        "armhf",
+        "armv7",
+        "aarch64",
+        "amd64",
+        "i386"
+    ],
+    "environment": {
+      "XTEVE_CONF": "/data/conf",
+      "XTEVE_HOME": "/data"
+    },
+    "host_network": true,
+    "image": "ghcr.io/home-assistant/{arch}-passthroughvpn",
+    "map": [
+      "config:rw",
+      "share:rw",
+      "ssl:ro"
+    ],
+    "ports": {
+      "34400/tcp": 34400
+    },
+    "ports_description": {
+      "34400/tcp": "Web interface"
+    },
+    "url": "https://github.com/onekintaro/hassio-addons/"
+  }
