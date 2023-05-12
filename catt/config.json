@@ -1,0 +1,41 @@
+{
+    "name": "CATT Add-On",
+    "version": "0.1.0",
+    "slug": "catt",
+    "description": "CATT Add-On",
+    "arch": [
+      "armhf",
+      "armv7",
+      "aarch64",
+      "amd64",
+      "i386"
+    ],
+    "startup": "before",
+    "log_level": "info",
+    "homeassistant": true,
+    "host_network": true,
+    "image": "ghcr.io/home-assistant/{arch}-catt",
+    "ports": {
+      "8008/tcp": 8008
+    },
+    "options": [
+      {
+        "name": "config",
+        "description": "Path to the CATT config file",
+        "type": "str",
+        "required": true,
+        "default": "/share/catt/config.json"
+      }
+    ],
+    "schema": {
+      "type": "object",
+      "properties": {
+        "config": {
+          "type": "string",
+          "title": "Path to the CATT config file",
+          "default": "/share/catt/config.json"
+        }
+      }
+    },
+    "url": "https://github.com/<your-username>/<your-addon-repo>"
+  }
