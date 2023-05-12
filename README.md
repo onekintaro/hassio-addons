@@ -17,6 +17,7 @@ I hope you find this repository useful, and I welcome any feedback or contributi
 
 This repository contains the following add-ons
 
+### [\[DEV\]CATT add-on](./catt-addon/)
 ### [\[DEV\]Passtrough VPN add-on](./passthroughvpn/)
 
 ![Supports aarch64 Architecture][aarch64-shield]
